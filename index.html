@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONSHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- block element modifier -->
+    <div class="shop">
+        <!-- header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="header__top-container grid">
+                    <ul class="header__top-list grid__row">
+                        <li class="header__top-list-item">
+                            <a href="mailto:theme_sky@gmail.com" class="header__top-list-item-link"> <i
+                                    class="fas fa-envelope header__top-list-item-icon"></i> theme_sky@gmail.com</a>
+                        </li>
+                        <li class="header__top-list-item header__top--separate">
+                            <a href="tel:+189.234.579" class="header__top-list-item-link"><i
+                                    class="fas fa-phone-alt header__top-list-item-icon"></i>+189.234.579</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__top-list grid__row">
+                        <li class="header__top-list-item">
+                            <a href="#" class="header__top-list-item-link"> English </a>
+                        </li>
+                        <li class="header__top-list-item header__top--separate">
+                            <a href="#" class="header__top-list-item-link"> USD </a>
+                        </li>
+                        <li class="header__top-list-item header__top--separate">
+                            <a href="#" class="header__top-list-item-link"> Wishlist (0) </a>
+                        </li>
+                        <li class="header__top-list-item header__top--separate">
+                            <a href="#" class="header__top-list-item-link"> Login / Register </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- header with search -->
+            <div class="header__middle">
+                <div class="grid">
+                    <div class="logo-shop">
+                        <img src="./assets/img/logo-gonshop.jpg" alt="" class="logo-shop-img">
+                    </div>
+
+                    <div class="header__middle-search">
+                        <div class="middle__search-select">
+                            <span class="middle__search-select-label">All categories</span>
+                            <i class="middle__search-select-icon fas fa-caret-down"></i>
+                            <ul class="middle__search-option">
+                                <li class="middle__search-option-item middle__search-option-item--active">
+                                    <span>In Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+
+                                <li class="middle__search-option-item">
+                                    <span>Out Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="middle__search-input-wrap header__middle--separate">
+                            <input type="text" class="middle__search-input " placeholder="Search for products">
+
+                            <!-- search history -->
+                            <div class="middle__search-history">
+                                <h3 class="middle__search-history-heading">search history</h3>
+                                <ul class="middle__search-history-list">
+                                    <li class="middle__search-history-item">
+                                        <a href="">Watch</a>
+                                    </li>
+
+                                    <li class="header__search-history-item">
+                                        <a href="">laptop</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="middle__search-btn"><i class="middle__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- cart layout -->
+                    <div class="header__middle-cart">
+                        <div class="middle__cart-wrap">
+                            <div class="middle__cart-box">
+                                <i class="middle__cart-icon fas fa-shopping-bag"></i>
+                                <span class="middle__cart-text">Cart: $0.00</span>
+                            </div>
+                            <!-- No-cart: middle__cart-list--no-cart -->
+                            <div class="middle__cart-list">
+                                <!-- <img src="	https://cf.shopee.vn/file/90819c54ddf9b730ba1177089ad57563" alt=""
+                                    class="middle__cart-no-cart-img"> -->
+                                <!-- <span class="middle__cart-list-no-cart-msg">Chưa có sản phẩm</span> -->
+
+                                <!-- <h4 class="middle__cart-heading">Sản phẩm đã thêm</h4> -->
+
+                                <ul class="middle__cart-list-item">
+                                    <!-- cart item -->
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo Quần baggy a nam
+                                                    ống rộng vải Hàn cao cấp, quần tây âu co giãn tốt Premium thời trang
+                                                    JBAGY - JBA01</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                    <!-- <li class="middle__cart-item">
+                                        <img src="https://cf.shopee.vn/file/fb5884218505f2a833475eba16368944" alt=""
+                                            class="middle__cart-img">
+    
+                                        <div class="middle__cart-item-info">
+                                            <div class="middle__cart-item-head">
+                                                <h5 class="middle__cart-item-name">Bộ sản phẩm giặt omo</h5>
+                                                <div class="middle__cart-tem-price-wrap">
+                                                    <span class="middle__cart-item-price">2.000.000</span>
+                                                    <span class="middle__cart-item-multiply">x</span>
+                                                    <span class="middle__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="middle__cart-item-body">
+                                                <span class="middle__cart-item-qnt--description">
+                                                    Phân loại: Bột Giặt
+                                                </span>
+                                                <span class="middle__cart-item-remove">Xóa</span>
+    
+                                            </div>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                                <!-- <a href="#" class="middle__cart-view-cart btn btn--primary">Xem giỏ hàng</a href="#"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__navbar">
+                <div class="navbar__container grid">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="category__heading-icon fas fa-bars"></i>
+                            Shop by Category
+                        </h3>
+
+                        <ul class="category-list">
+                            <li class="category-item ">
+                                <a href="#" class="category-item__link">HOME</a>
+                            </li>
+
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">SHOP
+                                    <i class="category-item-icon fas fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">BLOG
+                                    <i class="category-item-icon fas fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">SHORTCODE
+                                    <i class="category-item-icon fas fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">PAGE
+                                    <i class="category-item-icon fas fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">THEME FEATRUREs
+                                    <i class="category-item-icon fas fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="slider__opacity"></div>
+            <!-- <img src="./assets/img/spring summer.png" alt="" class="slider__img"> -->
+            <div class="slider__container grid">
+                <h3 class="slider__container-heading">
+                    Spring Summer 2015
+                </h3>
+
+                <p class="slider__container-subheading">
+                    New High Collection
+                </p>
+
+                <span class="slider__container-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio non justo euismod
+                    congue ut nec orci
+                </span>
+
+                <div class="slider__container--btn">
+                    <button class="container__btn-view">VIEW MORE</button>
+                    <button class="container__btn-buy">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="content grid">
+            <div class="features">
+                <img src="/assets/img/features/user1.jpg" alt="" class="features-img">
+                <img src="/assets/img/features/user2.jpg" alt="" class="features-img">
+                <img src="/assets/img/features/user3.jpg" alt="" class="features-img">
+            </div>
+            <div class="content__container">
+                <div class="grid__column-2">
+                    <div class="toprated padding-20">
+                        <h4 class="toprated-text">TOP RATED</h4>
+                        <div class="toprated__item">
+                            <img src="/assets/img/top-rated/photo-1.jpg" alt="" class="toprated__item-img">
+
+                            <div class="toprated__item-cotainer">
+                                <p class="toprated__item-heading">
+                                    shoes
+                                </p>
+
+                                <span class="toprated__item-subheading">
+                                    Cras ipsum massa
+                                </span>
+
+                                <span class="toprated__item-money">
+                                    $20.99
+                                </span>
+
+                                <div class="toprated__item-rating">
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toprated__item">
+                            <img src="/assets/img/top-rated/photo-1.jpg" alt="" class="toprated__item-img">
+
+                            <div class="toprated__item-cotainer">
+                                <p class="toprated__item-heading">
+                                    shoes
+                                </p>
+
+                                <span class="toprated__item-subheading">
+                                    Cras ipsum massa
+                                </span>
+
+                                <span class="toprated__item-money">
+                                    $20.99
+                                </span>
+
+                                <div class="toprated__item-rating">
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toprated__item">
+                            <img src="/assets/img/top-rated/photo-1.jpg" alt="" class="toprated__item-img">
+
+                            <div class="toprated__item-cotainer">
+                                <p class="toprated__item-heading">
+                                    shoes
+                                </p>
+
+                                <span class="toprated__item-subheading">
+                                    Cras ipsum massa
+                                </span>
+
+                                <span class="toprated__item-money">
+                                    $20.99
+                                </span>
+
+                                <div class="toprated__item-rating">
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="toprated__item">
+                            <img src="/assets/img/top-rated/photo-1.jpg" alt="" class="toprated__item-img">
+
+                            <div class="toprated__item-cotainer">
+                                <p class="toprated__item-heading">
+                                    shoes
+                                </p>
+
+                                <span class="toprated__item-subheading">
+                                    Cras ipsum massa
+                                </span>
+
+                                <span class="toprated__item-money">
+                                    $20.99
+                                </span>
+
+                                <div class="toprated__item-rating">
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star"></i>
+                                    <i class="toprated__item-star-gold fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advs1">
+                        <img src="/assets/img/advs/advs1/advs1-1.jpg" alt="" class="advs1-img">
+                    </div>
+
+                    <div class="testimonials padding-20">
+                        <h4 class="testimonials-text">TESTIMONIALS</h4>
+
+                        <div class="testimonials__container">
+                            <p class="testimonials__item-heading">
+                                “Duis a orci nunc. Suspendisse ac euismod justo, in fringilla diam. Nulla con-sectetur
+                                lacus odio. Fusce a sodales nulla. Nulla vitae commodo dolor, id cursus mauris.
+                            </p>
+
+                            <img src="/assets/img/TESTIMONIALS/testimonials-1.jpg" alt=""
+                                class="testimonials__item-img">
+
+                            <div class="testimonials__item-text">
+                                <span class="testimonials__item-subheading">
+                                    John hendry Doe
+                                </span>
+
+                                <span class="testimonials__item-Developer">
+                                    Developer
+                                </span>
+                            </div>
+
+                            <div class="testimonials__filter">
+                                <a href="" class="testimonials-filter__page-btn">
+                                    <i class="testimonials-filter__page-icon fas fa-angle-left"></i>
+                                </a>
+
+                                <a href="" class="testimonials-filter__page-btn ">
+                                    <i class="testimonials-filter__page-icon fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brands padding-20">
+                        <h4 class="brands-text">BRANDS</h4>
+
+                        <div class="brands__item">
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-1.jpg" alt="" class="brands__item-img ">
+                            </a>
+
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-2.jpg" alt="" class="brands__item-img ">
+                            </a>
+
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-3.jpg" alt="" class="brands__item-img ">
+                            </a>
+
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-4.jpg" alt="" class="brands__item-img ">
+                            </a>
+
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-5.jpg" alt="" class="brands__item-img ">
+                            </a>
+
+                            <a href="" class="brands__item-link">
+                                <img src="/assets/img/logo/logo-6.jpg" alt="" class="brands__item-img ">
+                            </a>
+                        </div>
+
+                        <div class="brands__filter">
+                            <a href="" class="brands-filter__page-btn">
+                                <i class="brands-filter__page-icon fas fa-angle-left"></i>
+                            </a>
+
+                            <a href="" class="brands-filter__page-btn ">
+                                <i class="brands-filter__page-icon fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__column-10">
+                    <div class="featuredproducts padding-20">
+                        <div class="featuredproducts__filter">
+                            <a href="" class="fd-filter__page-btn">
+                                <i class="fd-filter__page-icon fas fa-angle-left"></i>
+                            </a>
+
+                            <button class="fd-filter__btn btn fd-filter__btn--separate">new arrivals</button>
+                            <button class="fd-filter__btn btn fd-filter__btn--separate btn--textcolor">featured
+                                products</button>
+                            <button class="fd-filter__btn btn">best sellers</button>
+
+                            <a href="" class="fd-filter__page-btn ">
+                                <i class="fd-filter__page-icon fas fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="featuredproducts__container">
+                            <div class="grid__row">
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="suport-new">
+                                            NEW
+                                        </div>
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="suport-sale">
+                                            sale
+                                        </div>
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2 featuredproducts__box">
+                                    <div class="featuredproducts__container-item">
+                                        <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                            class="fd-container__item-img">
+
+                                        <div class="fd-container__item-container">
+                                            <p class="fd-container__item-heading">
+                                                shoes
+                                            </p>
+
+                                            <span class="fd-container__item-subheading">
+                                                Cras ipsum massa
+                                            </span>
+
+                                            <span class="fd-container__item-money">
+                                                $20.99
+                                            </span>
+
+                                            <div class="fd-container__item-rating">
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star"></i>
+                                                <i class="fd-container__item-star-gold fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advs2">
+                        <img src="/assets/img/advs/advs2/advs2-1.jpg" alt="" class="advs2-img">
+                        <div class="advs2-container">
+                            <h4 class="advs2-heading">Handbags Sale</h4>
+
+                            <p class="advs2-subheading">
+                                Pellentesque habitant morbi tristique senectus et netus et male
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="specialproducts padding-20">
+                        <h4 class="special__filter--heading">SPECIAL PRODUCTS</h4>
+
+                        <div class="specialproducts__container">
+                            <div class="specialproducts__box-1 ">
+                                <div class="box1__container-item ">
+                                    <img src="/assets/img/special/special1.jpg" alt="" class="box1-container__item-img">
+
+                                    <div class="box1-container__item-container">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="specialproducts__box-2 ">
+                                <!-- <div class="grid__half-width"> -->
+                                <div class="box2__container-item ">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="box2__container-item">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box2__container-item">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box2__container-item">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box2__container-item">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box2__container-item">
+                                    <img src="/assets/img/featuresproducts/featuresproducts-1.jpg" alt=""
+                                        class="special-container__item-img">
+
+                                    <div class="special-container__item-cotainer">
+                                        <p class="special-container__item-heading">
+                                            shoes
+                                        </p>
+
+                                        <span class="special-container__item-subheading">
+                                            Cras ipsum massa
+                                        </span>
+
+                                        <span class="special-container__item-money">
+                                            $20.99
+                                        </span>
+
+                                        <div class="special-container__item-rating">
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star"></i>
+                                            <i class="special-container__item-star-gold fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsletter">
+                        <!-- <img src="/assets/img/newsletter/newsletter1.jpg" alt="" class="newsletter-img"> -->
+                        <div class="newsletter__container">
+                            <h4 class="newsletter__container-heading">NEWSLETTER</h4>
+
+                            <span class="newsletter__container-subheading">
+                                Enjoy our newsletter to stay updated with the latest news and special sales. let's your
+                                email address here!
+                            </span>
+
+                            <div class="newsletter__container-click">
+
+                                <input type="text" class="newsletter__container-input"
+                                    placeholder="Enter your email address">
+
+                                <button class="newsletter__container-btn">
+                                    READ MORE
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advs3">
+                <div class="grid__column-2-5">
+                    <div class="advs3__container">
+                        <img src="/assets/img/advs/advs3/advs3-1.jpg" alt="" class="advs3__img">
+                        <div class="advs3__container-item">
+                            <span class="advs3__container-subheading">
+                                sale up to 70%
+                            </span>
+
+                            <h4 class="advs3__container-heading">
+                                New Shoes Casual
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="advs3__container">
+                        <img src="/assets/img/advs/advs3/advs3-2.jpg" alt="" class="advs3__img">
+                        <div class="advs3__container-item">
+                            <h4 class="advs3__container-heading">
+                                t-shirt Clothing
+                            </h4>
+
+                            <span class="advs3__container-subheading">
+                                New arrivals
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news ">
+                <div class="news__filter">
+                    <a href="" class="news-filter__page-btn">
+                        <i class="news-filter__page-icon fas fa-angle-left"></i>
+                    </a>
+
+                    <h4 class="news-filter__heading">
+                        LASTEST NEWS
+                    </h4>
+
+                    <a href="" class="news-filter__page-btn ">
+                        <i class="news-filter__page-icon fas fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <div class="news__container">
+                    <div class="news__container-item">
+                        <img src="/assets/img/news/news1.jpg" alt="" class="news-container__item-img">
+
+                        <div class="news__container--box">
+                            <span class="news__container--box-day">19</span>
+                            <span class="news__container--box-month">June</span>
+                        </div>
+
+                        <div class="news-container__item-container">
+                            <p class="news-container__item-heading">
+                                Vestibulum sapien turpis
+                            </p>
+
+                            <span class="news-container__item-subheading">
+                                Quisque at orci gravida, dictum turpis vitae, sagittis dui. Integer cursus auctor ex
+                                id accumsan. Nam mollis porta pacilisis. Fusce porttitor augue lectus
+                            </span>
+
+                            <div class="news-container__item-select">
+
+                                <a href="#" class="news-container__item-link">
+                                    READ MORE
+                                </a>
+
+                                <a href="" class="news__item-comments-link">
+                                    <i class="fas fa-comments news__item-comments-icon"></i>
+                                    <span class="news__item-comments-quantity">3</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__container-item">
+                        <img src="/assets/img/news/news1.jpg" alt="" class="news-container__item-img">
+
+                        <div class="news__container--box">
+                            <span class="news__container--box-day">19</span>
+                            <span class="news__container--box-month">June</span>
+                        </div>
+
+                        <div class="news-container__item-container">
+                            <p class="news-container__item-heading">
+                                Vestibulum sapien turpis
+                            </p>
+
+                            <span class="news-container__item-subheading">
+                                Quisque at orci gravida, dictum turpis vitae, sagittis dui. Integer cursus auctor ex
+                                id accumsan. Nam mollis porta pacilisis. Fusce porttitor augue lectus
+                            </span>
+
+                            <div class="news-container__item-select">
+                                <a href="#" class="news-container__item-link">
+                                    READ MORE
+                                </a>
+
+                                <div class="news__item-comments">
+                                    <a href="" class="news__item-comments-link">
+                                        <i class="fas fa-comments news__item-comments-icon"></i>
+                                        <span class="news__item-comments-quantity">3</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__container-item">
+                        <img src="/assets/img/news/news1.jpg" alt="" class="news-container__item-img">
+
+                        <div class="news__container--box">
+                            <span class="news__container--box-day">19</span>
+                            <span class="news__container--box-month">June</span>
+                        </div>
+
+                        <div class="news-container__item-container">
+                            <p class="news-container__item-heading">
+                                Vestibulum sapien turpis
+                            </p>
+
+                            <span class="news-container__item-subheading">
+                                Quisque at orci gravida, dictum turpis vitae, sagittis dui. Integer cursus auctor ex
+                                id accumsan. Nam mollis porta pacilisis. Fusce porttitor augue lectus
+                            </span>
+
+                            <div class="news-container__item-select">
+                                <a href="#" class="news-container__item-link">
+                                    READ MORE
+                                </a>
+
+                                <div class="news__item-comments">
+                                    <a href="" class="news__item-comments-link">
+                                        <i class="fas fa-comments news__item-comments-icon"></i>
+                                        <span class="news__item-comments-quantity">3</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="videoparallax">
+            <div class="videoparallax__opacity"></div>
+            <!-- <img src="/assets/img/videoparallax/videoparallax1.jpg" alt="" class="videoparallax-img"> -->
+            <div class="videoparallax__container">
+                <!-- <div class="videoparallax__container--item1"> -->
+                <i class="far fa-play-circle videoparallax__container-icon"></i>
+                <!-- </div> -->
+
+                <!-- <div class="videoparallax__container--item2"> -->
+                <p class="videoparallax__container-headding">lookbook high fashion</p>
+                <!-- </div> -->
+
+                <!-- <div class="videoparallax__container--item3"> -->
+                <span class="videoparallax__container-subheading">hot video of this year</span>
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__container">
+                    <div class="footer__container--aboutus">
+                        <h4 class="footer__aboutus--heading">
+                            ABOUT US
+                        </h4>
+                        <div class="footer__aboutus--adress">
+                            <span class="footer__adress--item">
+                                Office:
+                                <a href="868 Fake Street, New York" class="footer__adress--item-link">868 Fake Street,
+                                    New York</a>
+                            </span>
+
+                            <span class="footer__adress--item">
+                                Phone:
+                                <a href="(08) 8827 633354" class="footer__adress--item-link">(08) 8827 633354</a>
+                            </span>
+
+                            <span class="footer__adress--item">
+                                Fax:
+                                <a href="(08) 08 4752 1499" class="footer__adress--item-link">(08) 08 4752 1499</a>
+                            </span>
+
+                            <span class="footer__adress--item">
+                                Email:
+                                <a href="info@them-sky.com" class="footer__adress--item-link">info@them-sky.com</a>
+                            </span>
+                        </div>
+
+                        <div class="footer__aboutus--social">
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+
+
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="ti-google"></i>
+                            </a>
+
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="ti-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <a href="#" class="footer__aboutus--social-link">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer__container--information">
+                        <h4 class="footer__information--heading">
+                            INFORMATION
+                        </h4>
+                        <div class="footer__information--text">
+                            <span class="footer__information--text1">
+                                Frequently Asked Questions
+                            </span>
+
+                            <span class="footer__information--text2">
+                                Terms and Conditions
+                            </span>
+
+                            <span class="footer__information--text3">
+                                Privacy Policy
+                            </span>
+
+                            <span class="footer__information--text4">
+                                Email: info@them-sky.com
+                            </span>
+
+                            <span class="footer__information--text5">
+                                Email: info@them-sky.com
+                            </span>
+
+                            <span class="footer__information--text6">
+                                Email: info@them-sky.com
+                            </span>
+
+                            <span class="footer__information--text7">
+                                Email: info@them-sky.com
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer__container--recentport">
+                        <h4 class="footer__recentport--heading">
+                            RECENT POST
+                        </h4>
+
+                        <div class="footer__recentport--content">
+                            <div class="footer__recentport1">
+                                <div class="footer__recentport--box">
+                                    <span class="footer__recentport--box-day">19</span>
+                                    <span class="footer__recentport--box-month">June</span>
+                                </div>
+
+                                <div class="footer__recentport--text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                                </div>
+                            </div>
+
+                            <div class="footer__recentport2">
+                                <div class="footer__recentport--box">
+                                    <span class="footer__recentport--box-day">19</span>
+                                    <span class="footer__recentport--box-month">June</span>
+                                </div>
+
+                                <div class="footer__recentport--text">
+                                    Ut wisi enim ad minim veniam nibh euismod tincidunt ut laoreet dolore magna
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer__container--flickr">
+                        <h4 class="footer__flickr--heading">
+                            FLICKR
+                        </h4>
+                        <div class="footer__flickr--item">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                            <img src="/assets/img/flickr/flickr1.jpg" alt="" class="footer__flickr--img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer__logo">
+                    <img src="./assets/img/logo-gonshop.jpg" alt="" class="logo-shop-img">
+                </div>
+
+                <div class="footer__bottom">
+                    <span class="footer__bottom-text">
+                        © 2015 Gonshop. All Rights Reserved. Theme by theme-sky.com
+                    </span>
+                    <div class="footer__bottom--list">
+                        <a href="" class="footer__bottom--list-link">
+                            <i class="fab fa-cc-visa footer__bottom--item"></i>
+                        </a>
+
+                        <a href="" class="footer__bottom--list-link">
+                            <i class="fab fa-cc-amex footer__bottom--item"></i>
+                        </a>
+
+                        <a href="" class="footer__bottom--list-link">
+                            <i class="fab fa-cc-discover footer__bottom--item"></i>
+                        </a>
+
+                        <a href="" class="footer__bottom--list-link">
+                            <i class="fab fa-cc-mastercard footer__bottom--item"></i>
+                        </a>
+
+                        <a href="" class="footer__bottom--list-link">
+                            <i class="fab fa-paypal footer__bottom--item"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
